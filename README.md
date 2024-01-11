@@ -136,7 +136,7 @@ Answer:
 
 ### 5. Pivoting rows into aggregated columns with CASE
    
-*Business Problem*:Tracking user activity with frontend events
+*Business Problem*: Tracking user activity with frontend events
 
 The design team recently redesigned the customer support page on the website, and they want to run an AB test to see how
 the newly designed page performs compared to the original. An AB test is a statistical test used frequently used in 
@@ -183,6 +183,7 @@ Answer:
 ### 7. Unpivoting columns into rows using UNION
 
 *Business Problem*: Analyzing Subscription Cancellation Reasons
+
 Since the chief growth officer is tackling churn next year, one of her big question is:'Why are users cancelling and not renewing their subscriptions?'
 Knowing why users aren't renewing their subscriptions will be a key insights into how to prevent churn in the future. Is it because they don't like the product? Are they leaving 
 for a competitor? Or maybe it's out of budget and too expensive for them? Only the data can help us know for sure!
@@ -225,6 +226,7 @@ Answer:
 ### 9.Using Self Joins to compare Rows within the same table
 
 *Business problem*: Comparing MoM Revenue
+
 It's time for end-of-year reporting, and my manager wants me to put together a slide deck summarizing the top revenue highlights of the year and present 
 it to the whole company on the all-hands call. Among other metrics and insights, my manager suggests that I highlight months where revenue was month-over-month(MoM).
 In other words, she wants me to highlight the months where revenue was up from the previous month. 
@@ -254,7 +256,8 @@ Answer:
 
 ### 11. Consecutive Timestamp Difference with LEAD()
 
-*Business Problem*:Tracking User Payment Funnel Times with LEAD()
+*Business Problem*: Tracking User Payment Funnel Times with LEAD()
+
 A customer has complained that it took long for them to complete their payment due to there being an error with the system.
 The customer support team brought this issue up and asked the analytics team to investigate the payment funnel
 time data for subscriptionid = 38844
