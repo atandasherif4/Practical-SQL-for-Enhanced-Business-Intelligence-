@@ -5,7 +5,7 @@ CREATE TABLE products (
 						);--DONE
 
 --Inserting values into the products table
-INSERT INTO products (product_id, product_name)
+INSERT INTO products (product_id,)
 VALUES (1,'Basic'),
 	   (2, 'Expert');
 
@@ -18,7 +18,7 @@ FROM products;
 CREATE TABLE frontend_event_definitions (
 										 event_id CHAR(1) PRIMARY KEY,
 										 description VARCHAR(40),
-										 event_type VARCHAR(20)
+										 VARCHAR(20)
 										 );--DONE
 
 --Inserting values into frontend event definitions table
@@ -45,7 +45,7 @@ CREATE TABLE cancelations (
 						  
 						  
 --Inserting values into cancelations table
-INSERT INTO cancelations (subscription_id, cancel_date, cancelation_reason_1, cancelation_reason_2, cancelation_reason_3)
+INSERT INTO cancelations (subscription_id,  cancelation_reason_1, cancelation_reason_2, cancelation_reason_3)
 VALUES (38499, '2022-03-27', 'Expensive', 'null', 'null'),
 	   (72882, '2023-01-01', 'Not useful', 'Went to a competitor', 'null'),
 	   (44467, '2022-05-19', 'Went to a competitor', 'Expensive', 'Bad customer service'),
@@ -116,12 +116,12 @@ CREATE TABLE users (
 					department VARCHAR(15),
 					email VARCHAR(25),
 					customer_id CHAR(5),
-					admin_id CHAR(4),
+					admin CHAR(4),
 					FOREIGN KEY (admin_id) REFERENCES users(user_id)  
 					);--DONE
 					
 --Inserting values into users table
-INSERT INTO users (user_id, user_name, department, email, customer_id, admin_id)			
+INSERT INTO users (user_id, user_name, email, customer_id, admin_id)			
 VALUES ('U738', 'Rebecca Turner', 'Data Analytics', 'rturner27@google.co.uk',76338, 'U429'),
        ('U429', 'Carol Shaw', 'Data Analytics', 'cshaw2e@marriott.com', 76338, 'U429'),
 	   ('U192', 'Ruby Morgan', 'HR', 'rmorgan1n@narod.ru', 76338, 'U429'),
@@ -139,7 +139,7 @@ FROM users;
 CREATE TABLE frontend_event_log (
 								 event_log_id CHAR(6) PRIMARY KEY,
 								 user_id CHAR(4),
-								 event_id INTEGER,
+								 INTEGER,
 							     event_timestamp TIMESTAMP,
 								 FOREIGN KEY (user_id) REFERENCES users(user_id)
 								)
@@ -179,7 +179,7 @@ CREATE TABLE subscriptions (
 							subscription_id	CHAR(5) PRIMARY KEY,
 							customer_id CHAR(5),
 							product_id CHAR(1),
-							number_of_users INTEGER,
+							number__users INTEGER,
 							current_status INTEGER,
 							revenue INTEGER,
 							order_date DATE,
@@ -228,7 +228,7 @@ CREATE TABLE payment_status_log (
 								 status_movement_id VARCHAR(9) PRIMARY KEY,
 								 subscription_id CHAR(5),
 								 status_id INTEGER,
-								 movement_date TIMESTAMP,
+								 movement TIMESTAMP,
 								 FOREIGN KEY (status_id) REFERENCES status_definition(status_id)
 								);	 						
 
@@ -361,7 +361,7 @@ CREATE TABLE subscriptions_product_1 (
 )
 
 --Inserting values into the Subscriptions product table 1
-INSERT INTO subscriptions_product_1 (subscription_id, customer_id, order_date, expiration_date, active)
+INSERT INTO subscriptions_product_1 (subscription_id, customer_id, order_, expiration_date, active)
 VALUES (12622, 76338, '2022-01-01', '2023-01-01', 0),
 	   (44528, 11627, '2023-09-07', '2024-09-07', 1),
 	   (99332, 33667, '2022-12-08', '2023-12-08', 1),
@@ -384,7 +384,7 @@ CREATE TABLE subscriptions_product_2 (
 )
 
 --Inserting values into the Subscriptions product table 2
-INSERT INTO subscriptions_product_2 (subscription_id, customer_id, order_date, expiration_date, active)
+INSERT INTO subscriptions_product_2 (subscription_id, customer_id, order_, expiration_date, active)
 VALUES (74773, 76338, '2022-09-09', '2023-09-09', 1),
 	   (92888, 55533, '2023-11-07', '2024-11-07', 1),
 	   (72882, 33663, '2022-02-08', '2023-02-08', 0),
@@ -405,7 +405,7 @@ CREATE TABLE sales  (
 	)
 	
 --Inserting values into sales table
-INSERT INTO sales(sale_id, sale_employee_id, sale_date, sale_amount)
+INSERT INTO sales(sale_id, sale_employee_id, sale, sale_amount)
 VALUES (122, 'E738', '2023-01-04', 18000),
 	   (453, 'E738', '2023-03-18', 10000),
 	   (922, 'E738', '2023-07-16', 12000),
@@ -433,7 +433,7 @@ CREATE TABLE employees (
 			employee_name VARCHAR(15),
 			email VARCHAR(25),
 			department VARCHAR(15),
-			quota INTEGER,
+			 INTEGER,
 			manager_id VARCHAR(4)
 			)
 
