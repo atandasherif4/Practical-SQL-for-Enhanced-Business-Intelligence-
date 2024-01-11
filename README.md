@@ -2,6 +2,7 @@
 
 ![](Introductory_Picture.png)
 
+*Note: The sql code can be found above in the document named Project_SQL_Query*
 
 ## INTRODUCTION
 
@@ -294,3 +295,5 @@ Answer:
 
 I was able to learn about and get experience with how a senior analyst goes about her daily work by taking on embarking on this project.
 In addition, this project gave me the basic skills and insight that I need to be successful in my current data analytics work. Along with learning about certain terminologies (such funnel analysis, product analytics, interactions between employees and managers, etc.), I also gained some guidance on how to proceed with conducting analysis in those areas.
+
+*Note: The sql code can be found above in the document named Project_SQL_Query*
