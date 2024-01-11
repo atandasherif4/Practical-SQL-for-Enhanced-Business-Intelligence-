@@ -52,6 +52,8 @@ quick summary of the revenue and consistency that each product provided last yea
 
 *To solve this business problem, the subscriptions and product table will be used.*
 
+Answer:
+
 ![](Output_One.png)
 
 
@@ -67,6 +69,8 @@ Since the event tracks when a user views the unique landing page from the email,
 I decided it's best to calculate the distribution of the number of email link clicks per users.
 
 *To solve this business problem, the users and frontend event log table will be used.*
+
+Answer:
 
 ![](Output_Two.png)
 
@@ -90,6 +94,8 @@ Table view of status_definition
 As subscriptions move through the statuses, the movements are logged in the payments_status_log table using the status_id. Users can go back and forth and move through statuses multiple times. 
 
 Below is the Subscriptions payment funnel stage
+
+Answer:
 
 ![](Payment_Funnel_Stages.png)
 
@@ -123,6 +129,8 @@ that meeet one of these conditions.
 
 *To solve this business problem, the subscriptions table will be used.*
 
+Answer:
+
 ![](Output_Four.png)
 
 
@@ -149,6 +157,8 @@ I decided to count the number of times a user completes events above.
 
 *To solve this business problem, the frontend_event_definitions table will be used.(where event_type = 'Customer Support)*
 
+Answer:
+
 ![](Output_Five.png)
 
 ### 6. Combining Multiple Tables Using UNION
@@ -165,6 +175,8 @@ subscription_product_1 and subscription_product_2.
 
 *To solve this business problem, the subscriptions_product_1 and subscriptions_product_2 tables will be used.*
 
+Answer:
+
 ![](Output_Six.png)
 
 
@@ -179,6 +191,8 @@ Users can't select the same reason twice, and some users may even select less th
 tough lately, I decide to pull the percent of cancelled subscriptions that cancelled due to the product being too expensive.
 
 *To solve this business problem, the cancelations table will be used.*
+
+Answer:
 
 ![](Output_Seven.png)
 
@@ -203,6 +217,8 @@ employee_id, employee_name, manager_name and contact_email(use the manager email
 
 *To solve this business problem, the sales and employees table will be used*
 
+Answer:
+
 ![](Output_Eight.png)
 
 
@@ -214,6 +230,8 @@ it to the whole company on the all-hands call. Among other metrics and insights,
 In other words, she wants me to highlight the months where revenue was up from the previous month. 
 
 *To solve this business problem,the subscriptions table will be used.*
+
+Answer:
 
 ![](Output_Nine.png)
 
@@ -228,6 +246,8 @@ reached metric that could be displayed on a dashboard, but the sales manager exp
 a running total of sales revenue and a percent_quota metric that will be recalculated every time a sales member makes another sale. She agrees, and I got started.
 
 *To solve this business problem, the sales and employees table will be used to answer this. (Expected columns: sales_employee_id, sales_date, sale_amount, quota, runninig total and percent_total extracted)*
+
+Answer:
 
 ![](Output_Ten.png)
 
@@ -252,7 +272,7 @@ Here's the payment process a user goes through when signing up for a subcription
 
 The process is converted into status_id using the follwing mapping in the status_definition table below:
 
-Table view of status_definition
+![](Status_Definition_Table.png)
 
 As subscriptions move through the statuses, the movements are logged in the payments_status_log table using the status_id. Users can go back and forth and move through statuses multiple times. 
 More information on this can be found in the status definition table.
@@ -262,7 +282,10 @@ I'm expected to pull payment funnel data for subscription_id = 38844. For each s
 
 *To solve this business problem, the payment_status_log table will be used to answer this.*
 
+Answer:
+
 ![](Output_Eleven.png)
+
 
 ## CONCLUSION
 
